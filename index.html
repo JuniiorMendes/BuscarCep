@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,10 +34,10 @@
     .formulario-container {
       box-shadow: 2px 4px 8px 2px #1D1D54;
       background-color: #4848D4;
-      height: 100px;
-      width: 100vh;
+      height: 15%;
+      width: 70%;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
       justify-content: center;
       color: white;
@@ -45,30 +45,64 @@
       border-radius: 20px;
     }
 
+    .formulario-container input {
+      height: 20%;
+      width: 30%;
+      border-radius: 10px;
+      padding: 5px;
+    }
+
+    .formulario-container label {
+      padding: 5px;
+      margin: 5px 20px;
+    }
+
     .container {
       margin-top: 30px;
-      height: 40vh;
-      width: 42vw;
+      height: 40%;
+      width: 65%;
       background-color: #fff;
-      border-radius: 4px;
-      color: #000;
+      border-radius: 20px;
+      color: #1d505469;
       padding: 50px;
       font-size: 1rem;
       overflow: auto;
-      box-shadow: 2px 4px 8px 2px #1d505469;
+      box-shadow: 2px 4px 8px 2px #1d5054e7;
     }
+
+    @media (max-width: 800px) {
+       .formulario-container{
+         width: 78%;
+       }
+    }
+
+    @media (max-width: 450px) {
+       .formulario-container label{
+         font-size: 0.8rem;
+         padding: 0;
+       }
+
+       .container{
+         width: 55%;
+       }
+
+    }
+    @media (max-width: 300px) {
+       .formulario-container label{
+         font-size: 0.1rem;
+       }
+
+    }
+
   </style>
 </head>
 <body>
-  <form action="" class="formulario-container">
+  <form action="#" class="formulario-container">
     <label for="">Digite seu Cep :</label>
-    <input maxlength="8" type="number" name="cep" id="">
+    <input maxlength="8" type="number" name="cep">
   </form>
 
-  <div class="container">
-
-  </div>
-
+  <div class="container"></div>
   <script src="script.js"></script>
 </body>
 </html>
