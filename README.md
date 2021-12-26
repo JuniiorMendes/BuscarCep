@@ -1,2 +1,2 @@
 # BuscarCep
- projetinho aonde o usuario busca o cep com JS puro
+ projetinho aonde o usuario busca o cep. Com JS puro
